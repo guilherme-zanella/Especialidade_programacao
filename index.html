@@ -3,33 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <title>Especialidade de Programação</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Do Escoteiro ao Programador</h1>
-        <p>" O código é limpo de bugs e erros. "</p>
-        <nav>
-            <a href="#1">Item 1</a>
-            <a href="#3">Item 3</a>
-            <a href="#5">Item 5</a>
-            <a href="#6">Item 6</a>
-            <a href="#8">Item 8</a>
-            <a href="#9">Item 9</a>
-            <a href="#11">Item 11</a>
-            <a href="#12">Item 12</a>
+    <header id="cabeçalho">
+        <img src="imagens/icone-especialidade.png" alt="Imagem da especialidade">
+        <div id="titulo">
+            <h1>Do Escoteiro ao Programador</h1>
+            <p>" O código é limpo de bugs e erros. "</p>
+        </div>
+        <span id="burger" class="material-symbols-outlined" onclick="click_menu()">menu</span>
+        <nav id="menu">
+            <a href="#sec1">Item 1</a>
+            <a href="#sec3">Item 3</a>
+            <a href="#sec5">Item 5</a>
+            <a href="#sec6">Item 6</a>
+            <a href="#sec8">Item 8</a>
+            <a href="#sec9">Item 9</a>
+            <a href="#sec11">Item 11</a>
+            <a href="#sec12">Item 12</a>
         </nav>
     </header>
     <main>
-        <div id="1" class="perguntas">
+        <button><a href="#cabeçalho">Topo</a></button>
+        <div id="sec1" class="perguntas">
             <h2>Como programas e aplicativos facilitam o dia a dia</h2>
             <p>Os programas de computador e aplicativos estão presentes em várias atividades do nosso cotidiano e ajudam a realizar tarefas de maneira mais rápida, prática e organizada.</p>
             <p>Eles podem ser usados para estudar, trabalhar, se comunicar, organizar compromissos, fazer cálculos, pesquisar informações e até controlar aparelhos eletrônicos. Por exemplo, aplicativos de mapas ajudam a encontrar caminhos, aplicativos de calendário organizam compromissos e programas de edição permitem criar documentos, apresentações e imagens.</p>
             <p>Dessa forma, a tecnologia facilita diversas tarefas, economizando tempo e tornando atividades que poderiam ser complicadas muito mais simples.</p>
         </div>
-        <div id="3" class="perguntas">
+        <div id="sec3" class="perguntas">
             <h2>Python: recursos necessários para executar um programa</h2>
             <p>Para executar um programa desenvolvido em Python, é necessário ter um computador ou dispositivo compatível e o software necessário para interpretar o código.</p>
             <h3>Requisitos de hardware</h3>
@@ -47,7 +53,7 @@
             </ul>
             <p>Com esses recursos, já é possível criar e executar programas simples em Python. Para programas mais complexos, como jogos ou aplicações que utilizam inteligência artificial, podem ser necessários recursos de hardware mais avançados.</p>
         </div>
-        <div id="5" class="perguntas">
+        <div id="sec5" class="perguntas">
             <h2>O que é Software Livre?</h2>
             <p>Software livre é um programa que dá aos usuários liberdade para executar, estudar, modificar e compartilhar o software. Isso é possível porque seu código-fonte está disponível de acordo com a licença do programa.</p>
             <p>Isso não significa necessariamente que o software seja gratuito. A principal característica do software livre é a liberdade de usar, estudar, modificar e distribuir, e não simplesmente não pagar pelo programa.</p>
@@ -61,7 +67,7 @@
             </ul>
             <p>O software livre é importante porque permite que pessoas estudem como os programas funcionam, contribuam para seu desenvolvimento e criem novas versões ou melhorias de acordo com as regras de suas licenças.</p>
         </div>
-        <div id="6" class="perguntas">
+        <div id="sec6" class="perguntas">
             <h2>Licenciamento de programas e pirataria</h2>
             <p>
             O licenciamento de software define as regras que determinam como um programa pode ser usado, copiado, modificado e distribuído. Existem diferentes tipos de licenças.
@@ -83,7 +89,7 @@
             Por isso, é importante utilizar programas de forma legal, respeitando suas licenças e dando preferência a fontes oficiais e confiáveis.
             </p>
         </div>
-        <div id="8" class="perguntas">
+        <div id="sec8" class="perguntas">
             <h2>Funções em Python</h2>
             <p>As funções são blocos de código que realizam uma determinada tarefa. Python possui diversas funções prontas que podem ser utilizadas nos programas, facilitando o desenvolvimento e evitando que o programador precise escrever tudo do zero.</p>
             <h3>1. print()</h3>
@@ -100,7 +106,7 @@
             <p>As referências sobre Python podem ser encontradas principalmente na documentação oficial do Python, que explica as funções, comandos, bibliotecas e recursos da linguagem. Também é possível consultar livros, cursos e sites educacionais confiáveis.</p>
             <p>Uma das principais fontes é a documentação oficial do Python: docs.python.org.</p>
         </div>
-        <div id="9" class="perguntas">
+        <div id="sec9" class="perguntas">
             <h2>Repositórios de código</h2>
             <p>Um repositório de código é um local onde os arquivos e códigos de um projeto podem ser armazenados e organizados. Repositórios também permitem acompanhar as alterações feitas no código, recuperar versões anteriores e facilitar o trabalho em equipe.</p>
             <h3>1. GitHub</h3>
@@ -122,7 +128,7 @@
             </ul>
             <p>Assim, plataformas como GitHub, GitLab e Bitbucket tornam o desenvolvimento de software mais organizado, seguro e colaborativo.</p>
         </div>
-        <div id="11" class="perguntas">
+        <div id="sec11" class="perguntas">
             <h2>Como funciona uma empresa de jogos digitais</h2>
             <p>Uma empresa de jogos digitais é formada por profissionais de diferentes áreas que trabalham juntos para criar, lançar e manter jogos para computadores, celulares e consoles.</p>
             <p>O desenvolvimento normalmente começa com uma ideia. A equipe define o tipo de jogo, seu público, as plataformas em que será lançado e suas principais características. Depois começa a fase de planejamento, na qual são definidos os objetivos, prazos, recursos e tarefas do projeto.</p>
@@ -139,7 +145,7 @@
             <p>O trabalho da empresa não termina com o lançamento. Muitos jogos recebem atualizações, correções, novos conteúdos e melhorias durante sua vida útil. A empresa também pode acompanhar opiniões dos jogadores para identificar problemas e decidir quais melhorias serão feitas.</p>
             <p>Assim, uma empresa de jogos digitais funciona como uma equipe multidisciplinar, na qual profissionais de diferentes áreas trabalham juntos para transformar uma ideia em um jogo completo.</p>
         </div>
-        <div id="12" class="perguntas">
+        <div id="sec12" class="perguntas">
             <h2>O que são emuladores?</h2>
             <p>Um emulador é um programa que permite que um computador ou outro dispositivo imite o funcionamento de outro sistema. Ele reproduz, por meio de software, características necessárias para executar programas ou jogos originalmente desenvolvidos para outra plataforma.</p>
             <p>Por exemplo, um computador pode utilizar um emulador para executar um programa desenvolvido originalmente para um console ou para outro sistema operacional.</p>
@@ -168,5 +174,11 @@
     <footer>
         <p>Site desenvolvido por <a href="https://github.com/guilherme-zanella/" target="_blank">Guilherme Zanella</a> para a especialidade de programação</p>
     </footer>
+    <script>
+        function click_menu() {
+            const menu = document.getElementById('menu')
+            menu.classList.toggle('open')
+        }
+    </script>
 </body>
 </html>
