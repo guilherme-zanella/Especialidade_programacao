@@ -142,6 +142,10 @@ main ul {
     margin-bottom: 10px;
 }
 
+main img {
+    width: 100%;
+}
+
 footer {
     background-color: var(--cor5);
     color: white;
@@ -192,7 +196,7 @@ footer a {
     }
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 750px) {
     header img {
         display: none;
     }
