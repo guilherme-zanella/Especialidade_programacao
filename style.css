@@ -57,9 +57,9 @@ header #burger {
     order: -1;
 }
 
-nav {
+nav.normal {
     display: none;
-    flex-flow: column;
+    flex-flow: column nowrap;
     position: absolute;
     top: 50px;
     left: 10px;
@@ -185,7 +185,7 @@ footer a {
     #burger {
         display: none;
     }
-    nav {
+    nav.normal {
         order: 1;
         display: flex ;
         position: relative;
@@ -197,7 +197,7 @@ footer a {
         border: none;
     }
 
-    nav a {
+    nav.normal a {
         color: var(--cor2);
         font-weight: 600;
         flex: 1 1 auto;

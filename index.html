@@ -16,17 +16,17 @@
             <p>" O código é limpo de bugs e erros. "</p>
         </div>
         <span id="burger" class="material-symbols-outlined" onclick="click_menu()">menu</span>
-        <nav id="menu">
-            <a href="#sec1">Item 1</a>
-            <a href="#sec2">Item 2</a>
-            <a href="#sec3">Item 3</a>
-            <a href="#sec4">Item 4</a>
-            <a href="#sec5">Item 5</a>
-            <a href="#sec6">Item 6</a>
-            <a href="#sec8">Item 8</a>
-            <a href="#sec9">Item 9</a>
-            <a href="#sec11">Item 11</a>
-            <a href="#sec12">Item 12</a>
+        <nav id="menu" class="normal">
+            <a href="#sec1" class="link">Item 1</a>
+            <a href="#sec2" class="link">Item 2</a>
+            <a href="#sec3" class="link">Item 3</a>
+            <a href="#sec4" class="link">Item 4</a>
+            <a href="#sec5" class="link">Item 5</a>
+            <a href="#sec6" class="link">Item 6</a>
+            <a href="#sec8" class="link">Item 8</a>
+            <a href="#sec9" class="link">Item 9</a>
+            <a href="#sec11" class="link">Item 11</a>
+            <a href="#sec12" class="link">Item 12</a>
         </nav>
     </header>
     <main>
@@ -185,8 +185,13 @@
         <p>Site desenvolvido por <a href="https://github.com/guilherme-zanella/" target="_blank">Guilherme Zanella</a> para a especialidade de programação</p>
     </footer>
     <script>
+        const menu = document.getElementById('menu')
+        const link1 = document.body.getElementsByClassName('link')[0]
+        link1.addEventListener('click', clicou_link)
+        function clicou_link() {
+            menu.classList.remove('open')
+        }
         function click_menu() {
-            const menu = document.getElementById('menu')
             menu.classList.toggle('open')
         }
     </script>
