@@ -186,8 +186,10 @@
     </footer>
     <script>
         const menu = document.getElementById('menu')
-        const link1 = document.body.getElementsByClassName('link')[0]
-        link1.addEventListener('click', clicou_link)
+        const links = document.body.getElementsByClassName('link')
+        for (const link of links) {
+            link.addEventListener('click', clicou_link)
+        }
         function clicou_link() {
             menu.classList.remove('open')
         }
